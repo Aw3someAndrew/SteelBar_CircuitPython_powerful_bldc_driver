@@ -102,7 +102,7 @@ while True:
                     raise ValueError('Invalid motor number')
             except ValueError:
                 print("Invalid motor number")
-        if command == 'm' and param:
+        elif command == 'm' and param:
             try:
                 tempuint32 = int(param)
                 if tempuint32 == 2 or tempuint32 == 12 or tempuint32 == 13:
